@@ -1,1 +1,6 @@
 node_modules
+package-lock.json
+
+
+src/documents/excelfile/*.xlsx
+src/documents/firebase/*.json
