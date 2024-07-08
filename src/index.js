@@ -28,8 +28,11 @@ const filePath = path.join(__dirname, 'documents', 'excelfile', 'member.xlsx');
 
 // อัปโหลดข้อมูลไปยัง Firebase
 // data.forEach(async (row, index) => {
-//   const docRef = db.collection('members').doc(String(index));
-//   await docRef.set(row);
+//   db.collection('members').add(row).then((docRef) => {
+//     console.log('Document written with ID: ', docRef.id);
+//   }).catch((error) => {
+//     console.error('Error adding document: ', error);
+//   });
 // });
 
 console.log('อัปโหลดข้อมูลเรียบร้อยแล้ว');
