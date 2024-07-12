@@ -31,7 +31,7 @@ const filePath = path.join(__dirname, 'documents', 'excelfile', 'member.xlsx');
     formattedData.forEach(async (row) => {
       try {
         const docRef = await db.collection('members').add(row);
-        await db.collection('users').doc("ULineId"+docRef.id).set({ businessId: docRef.id });
+
         console.log('Document written with ID: ', docRef.id);
       } catch (error) {
         console.error('Error adding document: ', error);
